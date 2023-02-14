@@ -1,0 +1,127 @@
+.header-section{
+    position: absolute;
+    width: 100%;
+    .header-menu{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-top: 32px;
+        justify-content: flex-end;
+        @media screen and (max-width:768px) {
+            justify-content: space-between;
+        }
+        .header-menu-list{
+            gap: 20px;
+            display: flex;
+            @media screen and (max-width:768px) {
+                display: none;
+            }
+            .header-menu--item{
+                .header-menu-item--link{
+                    text-decoration: none;
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 1.333;
+                    letter-spacing: 0.1em;
+
+                    color: #FFFFFF;
+                    cursor: pointer;
+                    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+                    &:hover,&:focus{
+                        color: #FF6C00;
+                    }
+                }
+            }
+        }
+        .header-addres{
+            @media screen  and (max-width:768px){
+                display: none;
+            }
+            @media screen  and (min-width:768px){
+                margin-right: 19px;
+            }
+            @media screen  and (min-width:1600px){
+                margin-left: 254px;
+            }
+            .header-address-tel{
+                text-decoration: none;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 1.333;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                color: #FFFFFF;
+                &:hover,&:focus{
+                    color: #FF6C00;
+                }
+            }
+        }
+        .header-menu-biiking-online-ord{
+            @media screen  and (min-width:1600px){
+                order: 1;    
+            }
+        .header-menu-booking-online{
+            @media screen  and (max-width:768px){
+                display: none;
+            }
+            @media screen  and (min-width:768px){
+                margin-left: 45px;
+            }
+            @media screen  and (min-width:1600px){
+                margin-left: 43px;
+                margin-right: 17px;
+            }
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 1.333;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+
+            color: #FFFFFF;
+
+            padding:12px 20px;
+
+            border: 1px solid #FF6C00;
+            border-radius: 25px;
+            transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover,&:focus{
+              background: #FF6C00;
+            }
+        }
+    }
+        .header-logo{
+            @media screen and (min-width:768px){
+            margin-right: auto;
+            }
+            
+        .header-logo--svg{
+            width: 68.93px;
+            height: 55.46px;
+            fill: #303030;;
+            @media screen  and (max-width:768px){
+             fill:  #FFFFFF;;   
+            }
+        }
+    }
+    .header-menu-mobile{
+        @media screen and (min-width:768px) {
+            display: none;
+        }
+        width: 40px;
+        height: 40px;
+        .mobile-menu-svg{
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+}

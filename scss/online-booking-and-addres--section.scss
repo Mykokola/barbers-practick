@@ -1,0 +1,254 @@
+
+.section-deckstop--grid{
+    @media screen and (min-width:1600px) {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    }
+.online-booking-section{
+    @media screen and (min-width:768px){
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    @media screen and (max-width:768px){
+        padding-top: 84px;
+        padding-bottom: 84px;
+    }
+    @media screen and (min-width:1600px) {
+        padding-top: 130px;
+        padding-bottom: 183px;
+    }
+
+    background-color:#191C26;
+    .online-booking-width{
+        @media screen and (min-width:1600px) {
+            width: 605px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-right: 0;
+        }
+.online-form-title{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+    @media screen and (max-width:1600px) {
+    text-align: center;
+    }
+    @media screen and (min-width:1600px) {
+        margin-right: auto;
+    }
+
+}
+.online-booking-form{
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (min-width:1600px) {
+        justify-content: flex-end;
+     }
+    .online-booking-form-item--input{
+
+        @media screen and (min-width:768px)  {
+            &:nth-child(odd){
+                margin-right: 30px;
+            }
+         }
+       height: 24px;
+    }
+    .online-booking-form-item{
+        display: block;
+        margin-top: 44px;
+        @media screen and (max-width:768px){
+            width: 100%;
+        }
+    .online-booking--input{
+        @media screen and (min-width:768px) {
+            width: 330px;
+        }
+        @media screen and (min-width:1600px) {
+            width: 270px;
+        }
+        width: 100%;
+        height: 24px;
+        outline: none;
+        border:none;
+        background:transparent;
+        color:white;
+        border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+        padding-bottom: 8px;
+        &:focus{
+            border-bottom: 1px solid #FFFFFF;
+            &::-webkit-input-placeholder{
+                color:white;
+            }
+        }
+    }
+   
+    .online-booking--comment{
+        @media screen and (min-width:768px) {
+            width: 690px;
+        }
+        @media screen and (min-width:1600px) {
+            width: 570px;
+        }
+        @media screen and  (min-width:1600px) {
+            height: 77px;
+        }
+            width: 100%;
+        height: 76px;
+        resize: none;
+        background:transparent;
+        outline: none;
+        border:none;
+        border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+        color:white;
+        &:focus{
+            border-bottom: 1px solid #FFFFFF;
+            &::-webkit-input-placeholder{
+                color:white;
+            }
+        }
+    }
+
+}
+    .online-booking--button{
+        text-align: center;
+        @extend %button-barbers-deffolt;
+        color: #FFFFFF;
+        padding: 12px 38px;
+        display: flex;
+        margin-top: 44px;
+        width: 160px;
+        height: 40px;
+        justify-content: center;
+        @media screen and (max-width:1600px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media screen and (min-width:1600px) {
+            margin-right: auto;
+        }
+    }
+}
+    }
+}
+.contact-section{
+    @media screen and (min-width:768px){
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    @media screen and (max-width:768px){
+        padding-top: 84px;
+        padding-bottom: 84px;
+    }
+    @media screen and (min-width:1600px){
+        padding-top: 130px;
+        padding-bottom: 124.73px;
+    }
+    background-image: linear-gradient(to right, rgba(25, 28, 38, 80%), rgba(25, 28, 38, 80%)), url('../images/img.jpg');
+        .contact-section-width{
+            @media screen and (min-width:1600px) {
+                width: auto;
+                padding-left: 100px;
+            }
+        }
+    .contact-title{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 42px;
+        line-height:1.16;
+        letter-spacing: 0.05em;
+
+        color: #FFFFFF;
+        @media screen and (max-width:1600px) {
+        text-align: center;
+            
+        }
+    }
+    .address--footer{
+        @media screen and (min-width:768px){
+            display: flex;
+            justify-content: space-between;
+        }
+        @media screen and (min-width:1600px) {
+            flex-direction: column;
+        }
+        margin-top: 40px;
+        .footer-address--list{
+            .footer-addres--item{
+                display: flex;
+                align-items: center;
+                &:not(:nth-last-child(1)){
+                    margin-bottom: 20px;
+                }
+                .footer-addres-item--link{
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 1.66;
+
+                    letter-spacing: 0.02em;
+
+                    color: #9DA4BD;
+                    text-decoration: none;
+                    @media screen and (min-width:1600px) {
+                        max-width: 230px;
+                    }
+                }
+                .footer-addres-item--link-email{
+                    text-decoration: underline;
+                }
+                .footer-addres-item--icon{
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 16px;
+                }
+            }
+        }
+    .footer-addres-hourse-work--block{
+        @media screen and (min-width:1600px) {
+            margin-top: 70px;
+        }
+    .footer-addres-hours-work--paragraf{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        /* identical to box height */
+
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+        margin-top: 44px;
+        display: flex;
+        align-items: center;
+        @extend %before-line-p-h--20;
+        @media screen and (min-width:768px){
+          margin: 0;
+        }
+    }
+    .footer-addres-hours-work--title{
+        
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.66;
+        /* identical to box height, or 167% */
+
+        letter-spacing: 0.02em;
+
+        color: #9DA4BD;
+        margin-top: 20px;
+    }
+}
+}
+}
+}

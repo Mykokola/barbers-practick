@@ -1,0 +1,74 @@
+.mens-beard--section{
+    @media screen and (min-width:768px){
+        padding-top: 100px;
+        padding-bottom: 106px;
+    }
+    @media screen and (max-width:768px){
+        padding-top: 84px;
+        padding-bottom: 84px;
+    }
+    @media screen and (min-width:1600px){
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .mens-beard-paragraf{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+        /* identical to box height */
+
+        text-transform: uppercase;
+
+        color: #303030;
+
+        display: flex;
+        align-items: center;
+        @extend %before-line-p-h--20;
+        &::before{
+            background: #303030;
+        }
+    }
+    .means-beard-list{
+        @media screen and (min-width:768px) and (max-width:1600px) {
+            width: 690px;
+            gap: 30px;
+        }
+        margin-top: 71px;
+        @media screen and (min-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        @media screen and (max-width:480px) {
+            width: 100%;
+       
+        }
+        @media screen and (min-width:1600px) {
+            display: flex;
+            gap: 30px;
+        }
+        .means-bread-item{
+            
+            .means-bread-item--img{
+                display: block;
+                object-fit: cover;
+                @media screen and (max-width:480px) {
+                    width: 100%;
+                }
+                @media screen and (min-width:768px) {
+                    width: 330px;
+                }
+                @media screen and (min-width:1600px) {
+                    width: 270px;
+                }
+            }
+            @media screen and (max-width:768px) {
+                &:not(:nth-last-child(1)){
+                    margin-bottom: 30px;
+                }
+            }
+         
+        }
+    }
+}

@@ -1,0 +1,146 @@
+.service-price--section{
+    @media screen and (min-width:768px){
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    @media screen and (max-width:768px){
+        padding-top: 84px;
+        padding-bottom: 84px;
+    }
+    @media screen and (min-width:1600px){
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    background-image:linear-gradient(to right, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),url("../images/service-fon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .service-price--paragraf{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        
+        text-transform: uppercase;
+        
+        color: rgba(157, 164, 189, 0.6);
+        display: flex;
+        align-items:center;
+        @extend %before-line-p-h--20;
+    }
+    .service-price--title{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.175;
+
+        letter-spacing: 0.05em;
+
+        color: #FFFFFF;
+        margin-top: 20px;
+        @media screen and (max-width:768px) {
+            text-align: center;
+        }
+
+        @media screen and (min-width:768px){
+            
+        }
+        margin-bottom: 40px;
+    }
+.service-price-list-flex{
+    @media screen and (min-width:1600px) {
+        display: flex;
+        gap: 30px;
+    }
+    .service-price-list{
+        @media screen and (max-width:1600px) {
+            padding-left: 40px;
+         padding-right: 20px;
+        }
+        @media screen and (min-width:1600px) {
+          padding: 30px 20px;
+                
+        }
+        background: linear-gradient(to right, rgba(23, 26, 36, 0.7), rgba(23, 26, 36, 0.7));
+        width: 100%;
+    
+    .service-price--item{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.428;
+        letter-spacing: 0.02em;
+        color: #9DA4BD;
+        display: flex;
+        padding-bottom: 20px;
+        @media screen and (max-width:377px) {
+            font-size: 11px;
+        }
+        @media screen and (min-width:760px) {
+          
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.666;
+        /* identical to box height, or 167% */
+
+        text-align: right;
+        letter-spacing: 0.02em;
+
+        color: #9DA4BD;
+        }
+    .service-item{
+        white-space: nowrap;
+    }
+    .price-item{
+        display: flex;
+        white-space: nowrap;
+        width: 100%;
+        align-items: baseline;
+        &::before{
+            content:'';
+            display: block;
+            width: 100%;
+            height: 1px;
+            margin-left: 4px;
+            margin-right: 4px;
+
+            background: rgba(157, 164, 189, 0.12);
+        }
+    }
+}
+@media screen and (max-width:1600px) {
+    .service-price--item-two:nth-last-child(1){
+        padding-bottom: 30px;
+      }
+      .service-price--item-one:nth-child(1){
+          padding-top: 30px;
+      }
+}
+@media screen and (min-width:1600px) {
+    .service-price--item-two:nth-last-child(1){
+        padding-bottom: 0px;
+      }
+      .service-price--item-one:nth-last-child(1){
+          padding-bottom: 0px;
+      }
+}
+    }
+}
+.booking-btn{
+    @extend %button-barbers-deffolt;
+
+    color: #FFFFFF;
+
+    padding: 12px 20px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 44px;
+
+}
+}

@@ -1,0 +1,184 @@
+.contact-footer--section{
+    @media screen and (min-width:768px){
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+    @media screen and (max-width:768px){
+        padding-top: 44px;
+        padding-bottom: 44px;
+}
+    .footer-contact-list{
+        display: flex;
+        justify-content: flex-end;
+        .footer-contact-item{
+            display: flex;
+            &:not(:nth-last-child(1)){
+                margin-right: 40px;
+            }
+            .footer-contact-item--link{
+                text-decoration: none;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 11px;
+                line-height: 1.36;
+
+                letter-spacing: 0.2em;
+
+                color: #303030;
+                
+
+            }
+            
+        }
+        .footer-contact-item--line{
+            display: flex;
+            align-items:center;
+            @extend %before-line-p-h--40;
+        }
+    }
+    .footer-copy{
+        display: flex;
+        margin-top: 27px;
+        align-items:center;
+    .footer-contact-item--paragraf{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        /* identical to box height */
+
+        letter-spacing: 0.2em;
+
+        color: #9DA4BD;
+        margin-left:6px;
+        
+    }
+}
+}
+
+.menu-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(70, 149, 228, 0.2);
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+.mobile-menu{
+    top: 0;
+    right: 69%;
+    width: 70%;
+    height: 100%;
+    padding: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 1px rgb(46 47 66 / 8%), 0px 1px 1px rgb(46 47 66 / 16%), 0px 1px 6px rgb(46 47 66 / 8%);
+    z-index: 999;
+    transform: translateX(100%);
+    
+    .mobile-menu-close--btn{
+        width: 40px;
+        height: 40px;
+        color: #303030;
+        position: absolute;
+        top: 59px;
+        right:  41.333px;
+        &:hover{
+            color:rgba(255, 108, 0, 1)
+        }
+        .mobile-menu-close-btn--icon{
+            width: 40px;
+            height: 40px;
+            fill: currentColor;
+        }
+    }
+    .mobile-menu--list{
+        margin-top: 78px;
+        .mobile-menu-item{
+            &:not(:nth-last-child(1)){
+                margin-bottom: 20px;
+            }
+            .mobile-menu-item--link{
+                text-decoration: none;
+                
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 1.38;
+                /* identical to box height */
+
+                letter-spacing: 0.1em;
+                color: #303030;
+            }
+            .mobile-menu-item--link-active-color:hover{
+                color: #FF6C00;
+            }
+        }
+    }
+    .mobile-menu--addres{
+        margin-top: 64px;
+        .mobile-menu-addres--tel{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 1.38;
+            /* identical to box height */
+
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+
+            color: #303030;
+        }
+    }
+    .mobile-menu-booking{
+        @extend %button-barbers-deffolt;
+
+
+        color: #303030;
+
+        padding: 12px 37px;
+
+        margin-top: 24px;
+    
+    }
+    .mobile-social-list{
+        margin-top: 64px;
+        .mobile-social-item{
+            &:nth-last-child(1){
+                margin-left: 100px;
+                margin-top: 24px;
+            }
+            .mobile-social-item--line{
+                display: flex;
+                align-items:center;
+                @extend %before-line-p-h--40;
+                &::before{
+                    background: #303030;
+                }
+        }
+           .mobile-social-item--link{
+            text-decoration: none;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 1.35;
+
+            letter-spacing: 0.2em;
+
+            color: #303030;
+           } 
+        }
+    }
+}
+.is-open{
+    transform: translateX(0);
+}
+}
+.is-open{
+    transform: translateX(0);
+}

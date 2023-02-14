@@ -1,0 +1,40 @@
+%button-barbers-deffolt{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.333;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #303030;
+    border: 1px solid #FF6C00;
+    border-radius: 25px;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,&:focus{
+        background: #FF6C00;
+        color: #FFFFFF;
+    }
+}
+
+%before-line-p-h--20{
+    &::before{
+        content:'';
+        display: block;
+        width: 60px;
+        height: 1px;
+        background: rgba(157, 164, 189, 0.6);
+
+        margin-right: 20px;
+    }
+}
+%before-line-p-h--40{
+    &::before{
+        content:'';
+        display: block;
+        width: 60px;
+        height: 1px;
+        background: rgba(157, 164, 189, 0.6);
+
+        margin-right: 40px;
+    }
+}
